@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/bf940f25da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="Home">
+        <div class="container">
+            <nav>
+                <a href="#" class="brand-logo">Prince.</a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Prince</span> Reyes<br/> from Philippines</h1>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/341683185_221733850556957_3636447463776696473_n.jpg" alt="profile pic">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita a earum culpa quidem dolore voluptatum laborum sint repellat odit, ratione quibusdam cum enim dolores? Fugit, cum? Ab tempore iste voluptatibus? Perspiciatis quia repudiandae voluptates placeat odit sint, culpa, rem cupiditate itaque voluptatibus earum a, excepturi consectetur natus tenetur cum mollitia.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br/>HTML, CSS, Javascript, React</li>
+                            <li><span>Back-End Development</span><br/>NodeJS, Python, MongoDB, MySQL</li>
+                            <li><span>UI/UX</span><br/>Wireframe, Low-Fidelity and High-Fidelity Prototype, Figma, Adobe XD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2023 - Current</span><br/>UX Design Google/Coursera</li>
+                            <li><span>Feb 2021 - Present</span><br/>Full-Stack Web Development - M.E.R.N and Python</li>
+                            <li><span>Oct 2013 - March 2020</span><br/>Wireframe, Low-Fidelity and High-Fidelity Prototype, Figma, Adobe XD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>The Complete 2021 Web Development Bootcamp</span><br/>App Brewery - Dr. Angela Yu</li>
+                            <li><br/>
+                                <ul class="sub-ul">
+                                    <li>Gained comprehensive understanding of web development starting from HTML, CSS, and JavaScript.</li>
+                                    <li>Learned advanced topics such as Git/GitHub, MERN stack, and RESTful API development.</li>
+                                    <li>Acquired practical skills and hands-on experience that allowed building of real-world projects.</li>
+                                    <li>Updated to include Web3 technologies, giving a more complete and up-to-date understanding of latest web development trends and technologies.</li>
+                                    <li>Equipped with knowledge and skills necessary to become a competent and confident web developer.</li>
+                                </ul> 
+                            </li>           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>STI Fairview 2009 - 2012</span><br/>Bachelor of Science Computer Science</li>
+                            <br/>
+                            <p class="content-description">I hold a Bachelor of Science degree in Computer Science. Throughout my studies, I gained expertise in various areas of computer science, with a focus on the Java programming language, SQLYog, VB6, and PHP as my primary tech stack. I also delved into topics such as data structures and algorithms, project management, and other essential aspects of corporate experience. This comprehensive education has equipped me with the necessary skills to excel in the field of software development and tackle complex challenges with efficiency and precision.</p>             
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus reiciendis, earum voluptas accusantium aliquam error unde aut hic excepturi ullam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus reiciendis, earum voluptas accusantium aliquam error unde aut hic excepturi ullam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus reiciendis, earum voluptas accusantium aliquam error unde aut hic excepturi ullam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, totam accusantium quis aperiam commodi voluptatum.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, totam accusantium quis aperiam commodi voluptatum.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, totam accusantium quis aperiam commodi voluptatum.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-regular fa-envelope"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> 09058589010</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>Copyright @ Prince. 2023</p>
+    </footer>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu")
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+   
+</body>
+</html>
